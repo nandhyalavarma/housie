@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            text-align: center;
+        }
+      .inp{
+            height: 100px;
+            font-size: 100px;
+            width: 500px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn:hover:hover{
+            color: blueviolet;
+            background-color: black;
+
+        }
+        .btn{
+            margin-top: 30px;
+            width: 100px;
+            height: 30px;
+        }
+        .head{
+            color: antiquewhite;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(28, 90, 69);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Phani Housie Coins App</h1>
+
+    </div>
+    <form method="get">
+        {% csrf_token %}
+    <div class="result">
+        <input class="inp" type="text" value="{{value}}">
+    </div>
+    <div ><input class="btn" type="submit" value="Next Number" name="next"></div>
+    </form>
+    
+</body>
+</html>
